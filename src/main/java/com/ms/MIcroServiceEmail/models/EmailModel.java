@@ -13,10 +13,9 @@ import java.time.LocalDateTime;
 @Table(name="TB_EMAIL")
 
 public class EmailModel implements Serializable {
+    private static final long serialVersionUID=1l;
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-
-    private static final long serialVersionUID=1l;
     private Long emailId;
     private String OwnerRef;
     private String emailFrom;
@@ -26,5 +25,6 @@ public class EmailModel implements Serializable {
     private String text;
     private LocalDateTime sendDateEmail;
     private StatusEmail statusEmail;
+
 
 }
