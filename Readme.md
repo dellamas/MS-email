@@ -30,16 +30,4 @@ Como utilizar
         Subject: assunto do email.
         text: conteúdo do email.
 
-    Exemplo de requisição utilizando cURL:
-    
-    curl --location --request POST 'http://localhost:8080/sending-email' \
---header 'Content-Type: application/json' \
---data-raw '{
-    "OwnerRef": "Meu dono",
-    "emailFrom": "meuemail@gmail.com",
-    "emailTo": "emaildestinatario@gmail.com",
-    "Subject": "Assunto do email",
-    "text": "Conteúdo do email"
-}'
-
-    
+ 
